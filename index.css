@@ -1,0 +1,59 @@
+.container{
+    width: 40%;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 0px 45px 17px rgb(0, 0, 0);
+    padding: 25px;
+    background-color: rgb(230, 46, 46);
+    border-radius: 25px;
+}
+ #calculation{
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 18px 10px;
+    font-size: 30px;
+    border: 2px solid black;
+    margin-bottom: 5%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+ }
+
+ .buttons{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(4,25%);
+ }
+
+ .buttons > div{
+    margin: 3px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 10px;
+    font-weight: 900;
+ }
+
+ .button{
+    line-height: 40px;
+    text-align: center;
+    font-size: 25px;
+ }
+
+ .equal{
+    background-color: rgb(0, 0, 0);
+    line-height: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    grid-column: span 3;
+ }
+
+ .button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.1s ease-in;
+ }
+
+ 
