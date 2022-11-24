@@ -9,19 +9,50 @@ body{
     background-color: rgba(0, 0, 0, 0.862);
     border-radius: 25px;
 }
- #calculation{
+  /* #calculation{
+   display: block;
     text-align: right;
-    height: 100px;
+    height: 50px;
     justify-content: center;
     align-items: center;
     padding: 18px 10px;
     font-size: 30px;
     border: 2px solid black;
-    margin-bottom: 5%;
+     margin-bottom: 5%; 
     background-color: rgb(165, 162, 162);
     color: rgb(243, 241, 241);
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
  }
+ #answer{
+   position: relative;
+   text-align: right;
+   height: 50px;
+   justify-content: center;
+   align-items: center;
+   padding-right: 3%;
+   font-size: 30px;
+   border: 2px solid black;
+   margin-bottom: 5%;
+   background-color: rgb(165, 162, 162);
+   color: rgb(243, 241, 241);
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+} */
+#container1{
+   text-align: right;
+   height: 110px;
+   align-items: center;
+   padding-top: 20px;
+   padding-right: 18px;
+   font-size: 30px;
+   border: 2px solid black;
+   margin-bottom: 5%;
+   background-color: rgb(165, 162, 162);
+   color: rgb(243, 241, 241);
+   border-radius: 10px;
+}
 
  .buttons{
     display: grid;
@@ -87,13 +118,13 @@ body{
 }
 
 #equal:hover{
-   background-color: rgb(55, 85, 255);
+   background-color: rgb(253, 185, 66);
    color: white;
    transition: 0.1s ease-in;
 }
 
 #clear:hover{
-   background-color: rgb(52, 82, 255);
+   background-color: rgb(253, 185, 66);
    color: white;
    transition: 0.1s ease-in;
 }
