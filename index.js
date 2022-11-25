@@ -18,18 +18,30 @@ function evaluateSum() {
             case('+'):
                 if(calculate.innerText[calculate.innerText.length -1] == ('+')){
                     return
+                }else if(calculate.innerText[calculate.innerText.length -1] == ('/')){
+                    return('+')
                 }
                 case('-'):
                 if(calculate.innerText[calculate.innerText.length -1] == ('-')){
                     return
+                }else if(calculate.innerText[calculate.innerText.length -1] == ('-')){
+                    return('*')
                 }
                 case('*'):
                 if(calculate.innerText[calculate.innerText.length -1] == ('*')){
                     return
+                }else if(calculate.innerText[calculate.innerText.length -1] == ('*')){
+                    return('+')
+                }else if(calculate.innerText[calculate.innerText.length -1] == ('+')){
+                    return('*')
                 }
                 case('/'):
                 if(calculate.innerText[calculate.innerText.length -1] == ('/')){
                     return
+                }else if(calculate.innerText[calculate.innerText.length -1] == ('+')){
+                    return('/')
+                }else if(calculate.innerText[calculate.innerText.length -1] == ('*')){
+                    return('/')
                 }
                 case('.'):
                 if(calculate.innerText[calculate.innerText.length -1] == ('.')){
