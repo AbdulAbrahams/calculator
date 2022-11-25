@@ -26,7 +26,7 @@ function evaluateSum() {
                     return
                 }else if(calculate.innerText[calculate.innerText.length -1] == ('-')){
                     return('*')
-                }
+                } 
                 case('*'):
                 if(calculate.innerText[calculate.innerText.length -1] == ('*')){
                     return
@@ -46,20 +46,14 @@ function evaluateSum() {
                 case('.'):
                 if(calculate.innerText[calculate.innerText.length -1] == ('.')){
                     return
-                }
-                
-            
+                }          
             default:
-            calculate.innerText += e.target.innerText;
-            
-            
-        
+            calculate.innerText += e.target.innerText;     
        }
     });
 });
   }
   evaluateSum();
-
 
 function clearSum(){
     but.map( button => {
@@ -75,7 +69,3 @@ function clearSum(){
 };
 
 clearSum();
-
-  
-
-
