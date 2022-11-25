@@ -1,9 +1,9 @@
-let calculate = document.getElementById('calculation');
-let answers = document.getElementById('output');
-let but = Array.from(document.getElementsByClassName('button'));
+const calculate = document.getElementById('calculation');
+const answers = document.getElementById('output');
+const but = Array.from(document.getElementsByClassName('button'));
+const operators = document.querySelector(['data-operand']);
+let lastPosition = but.length -1;
 let sum = '';
-
-
 
 function evaluateSum() {
     but.map( button => {
@@ -13,10 +13,35 @@ function evaluateSum() {
         output.innerText = eval(calculate.innerText);
             break
             case('←'):
-            calculate.innerText = calculate.innerText.slice(0,-1);
+                calculate.innerText = calculate.innerText.slice(0,-1);
                 break
+            case('+'):
+                if(calculate.innerText[calculate.innerText.length -1] == ('+')){
+                    return
+                }
+                case('-'):
+                if(calculate.innerText[calculate.innerText.length -1] == ('-')){
+                    return
+                }
+                case('*'):
+                if(calculate.innerText[calculate.innerText.length -1] == ('*')){
+                    return
+                }
+                case('/'):
+                if(calculate.innerText[calculate.innerText.length -1] == ('/')){
+                    return
+                }
+                case('.'):
+                if(calculate.innerText[calculate.innerText.length -1] == ('.')){
+                    return
+                }
+                
+            
             default:
             calculate.innerText += e.target.innerText;
+            
+            
+        
        }
     });
 });
